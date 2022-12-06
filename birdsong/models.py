@@ -36,10 +36,10 @@ class Contact(ClusterableModel):
 
 
 class CampaignStatus(models.IntegerChoices):
-    UNSENT = 0
-    SENDING = 1
-    SENT = 2
-    FAILED = 3
+    UNSENT = 0, _('unsent')
+    SENDING = 1, _('sending')
+    SENT = 2, _('sent')
+    FAILED = 3, _('failed')
 
 
 class Campaign(models.Model):
